@@ -1,54 +1,86 @@
-header, nav, main, section, footer {
-    margin-bottom: 4px;
-    border: solid 2px white;
+* {
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    border: solid 1px white;
+}
+nav, main, section {
+    height: 86vh;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    padding: 16px;
+}
+
+nav {
+    background-color: rgb(165, 4, 197);
     padding: 10px;
 }
 
-header, footer {
+main {
+    background-color: rgb(214, 5, 5);
+    padding: 10px;
+}
+
+section {
+    background-color: rgb(86, 86, 240);
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
     text-align: center;
-    font-size: x-large;
     padding: 16px;
 }
 
 main {
-    width: 50%;
+    width: 33.3%;
 }
 
-nav, section {
-    width: 25%;
+nav , section {
+    width: 31.6%;
 }
 
-nav {
+nav , main {
     float: left;
 }
 
 section {
     float: right;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: black;
-    color: whitesmoke;
-}
-
-nav {
-    background-color: rgb(20, 204, 97);
-    color: whitesmoke;
-}
-
-main {
-    background-color: rgb(253, 108, 51);
-    color: whitesmoke;
-}
-
-section {
-    background-color: rgb(193, 40, 253);
-    color: whitesmoke;
 }
 
 footer {
-    background-color: black;
-    color: whitesmoke;
-    overflow: hidden;
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 28.9%;
+    }
+    main {
+        width: 65.3%;
+    }
+    nav, main {
+        float: left;
+    }
+    section {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        width: 95.4%;
+    }
+    main {
+        width: 95.4%;
+    }
+    section {
+        width: 95.4%;
+    }
+    nav, main, section {
+        float: none;
+    }
 }
