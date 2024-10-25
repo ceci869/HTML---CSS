@@ -1,0 +1,54 @@
+header, nav, main, section, footer {
+    margin-bottom: 4px;
+    border: solid 2px white;
+    padding: 10px;
+}
+
+header, footer {
+    text-align: center;
+    font-size: x-large;
+    padding: 16px;
+}
+
+main {
+    width: 50%;
+}
+
+nav, section {
+    width: 25%;
+}
+
+nav {
+    float: left;
+}
+
+section {
+    float: right;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    color: whitesmoke;
+}
+
+nav {
+    background-color: rgb(20, 204, 97);
+    color: whitesmoke;
+}
+
+main {
+    background-color: rgb(253, 108, 51);
+    color: whitesmoke;
+}
+
+section {
+    background-color: rgb(193, 40, 253);
+    color: whitesmoke;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    overflow: hidden;
+}
