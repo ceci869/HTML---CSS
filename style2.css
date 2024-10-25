@@ -1,0 +1,90 @@
+* {
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    border: solid 1px white;
+    text-align: center;
+}
+nav, main, section {
+    height: 86vh;
+}
+
+header {
+    background-color: black;
+    padding: 16px;
+}
+
+nav {
+    background-color: rgb(165, 4, 197);
+    padding: 10px;
+}
+
+main {
+    background-color: rgb(214, 5, 5);
+    padding: 10px;
+}
+
+section {
+    background-color: rgb(86, 86, 240);
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    padding: 16px;
+}
+
+main {
+    width: 33.3%;
+}
+
+nav , section {
+    width: 31.6%;
+}
+
+nav , main {
+    float: left;
+}
+
+section {
+    float: right;
+}
+
+footer {
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 28.9%;
+    }
+    main {
+        width: 65.3%;
+    }
+    nav, main {
+        float: left;
+        height: 48vh;
+    }
+    section {
+        width: 97%;
+        height: 34vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        width: 95.4%;
+        height: 2vh;
+    }
+    main {
+        width: 95.4%;
+        height: 76vh;
+    }
+    section {
+        width: 95.4%;
+        height: 2vh;
+    }
+    nav, main, section {
+        float: none;
+    }
+}
