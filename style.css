@@ -5,24 +5,19 @@
 }
 /*corpo - características gerais*/
 body {
-    background-color: #FFFFFF;
-}
-div.container {
     background-image: url(img/turtle-figure.png), url(img/star1-figure.png), url(img/star2-figure.png), url(img/fish1-figure.png), url(img/fish2-figure.png);
-    background-position: bottom 550px left 200px, bottom 300px left 200px, bottom 250px left 300px, bottom 380px right 220px, bottom 480px right 120px;
+    background-position: bottom 160px left 250px, top 420px left 280px, top 530px left 380px, top 360px right 280px, top 280px right 190px;
     background-repeat: no-repeat;
     
 
     background-color: rgb(0, 99, 190);
-    width: 1281px;
-    height: 902px;
     margin: 61px 80px 61px 80px;
     border-radius: 24px;
 }
 /*posicionamento da logo do projeto*/
 .logo img {
     position: relative;
-    top: 47.79px;
+    top: 0px;
     left: 51.05px;
 }
 /*direcionamento de login e signup*/
@@ -30,7 +25,7 @@ nav {
     display: flex;
     flex-direction: row-reverse;
     position: relative;
-    top: 20px;
+    top: -28px;
     right: 51.05px;
 }
 
@@ -68,7 +63,7 @@ main {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 280px;
+    top: 150px;
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
 
@@ -91,4 +86,150 @@ main a {
     color: #25517AC7;
     padding: 12px 26px 12px 26px;
     margin-top: -18px;
+}
+/*media query*/
+@media screen and (max-width: 780px) {
+    body {
+        background-image: url(img/turtle-figure.png), url(img/star1-figure.png), url(img/star2-figure.png), url(img/fish1-figure.png), url(img/fish2-figure.png);
+        background-position: bottom 140px left 30px, top 520px left 80px, top 600px left 150px, top 490px right 120px, top 450px right 40px;
+        background-repeat: no-repeat;
+    }
+
+    .logo img {
+        position: relative;
+        top: -50px;
+        left: -50px;
+        width: 20vh;
+        height: 20vh;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        top: -148px;
+        right: -50px;
+    }
+
+    main {
+        position: relative;
+        top: 120px;
+    }
+
+    a {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        text-decoration: none; 
+    } 
+    
+    a.signup{
+        color: #000000;
+        background-color: #FFFFFF;
+        border: solid 1px #FFFFFF;
+        border-radius: 73px;
+        width: 90px;
+        height: 20px;
+        padding: 6px;
+        position: relative;
+        top: -8px;
+    }
+
+    a.login {
+        margin-right: 24px;
+    }
+
+    main p {
+        font-weight: 400;
+        font-size: 24px;
+    }
+    main h1 {
+        font-weight: 500;
+        font-size: 94px;
+        margin-top: -16px;
+    }
+    main a {
+        font-family: 'Inter', sans-serif;
+        background-color: #FFFFFF;
+        border: solid 1px white;
+        border-radius: 4px;
+        color: #25517AC7;
+        padding: 12px 26px 12px 26px;
+        margin-top: -8px;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-image: url(img/turtle-figure.png), url(img/star1-figure.png), url(img/star2-figure.png), url(img/fish1-figure.png);
+        background-position: bottom 140px left 30px, top 520px left 20px, top 600px left 90px, top 490px right 10px;
+        background-repeat: no-repeat;
+    }
+
+    .logo img {
+        position: relative;
+        top: -50px;
+        left: -50px;
+        width: 10vh;
+        height: 10vh;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        top: -98px;
+        right: -50px;
+    }
+
+    main {
+        position: relative;
+        top: 120px;
+    }
+
+    a {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        text-decoration: none; 
+    } 
+    
+    a.signup{
+        color: #000000;
+        background-color: #FFFFFF;
+        border: solid 1px #FFFFFF;
+        border-radius: 73px;
+        width: 70px;
+        height: 14px;
+        padding: 6px;
+        position: relative;
+        top: -8px;
+    }
+
+    a.login {
+        margin-right: 14px;
+    }
+
+    main p {
+        font-weight: 400;
+        font-size: 16px;
+    }
+    main h1 {
+        font-weight: 500;
+        font-size: 80px;
+        margin-top: -16px;
+    }
+    main a {
+        font-family: 'Inter', sans-serif;
+        background-color: #FFFFFF;
+        border: solid 1px white;
+        border-radius: 4px;
+        color: #25517AC7;
+        padding: 12px 26px 12px 26px;
+        margin-top: -8px;
+    }    
 }
