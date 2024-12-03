@@ -1,0 +1,29 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    height: 773px;
+    width: 80%;
+}
+
+section {
+    height: 773px;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(rgba(2, 101, 192, 0.75), rgba(2, 101, 192, 0.75), #0063BE);
+    background-repeat: no-repeat;
+    background-size: 494px 100vh;
+}
+
+section img {
+    width: 474px;
+    height: 528px;
+}
