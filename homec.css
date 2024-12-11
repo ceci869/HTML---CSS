@@ -87,7 +87,7 @@ section.container {
 }
 
 section.container img{
-    width: 26vh;
+    width: 36vh;
     height: 30vh;
     flex-grow: 1;
     border-radius: 10px;
